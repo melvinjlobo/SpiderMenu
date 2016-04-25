@@ -124,6 +124,8 @@ Note that the elevation works in a reverse manner. **10** being the closest to t
 
 You can also use SpiderMenu#RoundedShadowImageView as an individual control!
 
+Acknowledgement : Facebook for their awesome **[Rebound](http://facebook.github.io/rebound/)** Library
+
 LICENSE
 -------
  
@@ -150,6 +152,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ____
-
-
-
