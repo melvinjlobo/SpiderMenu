@@ -1,6 +1,13 @@
 # SpiderMenu
 A Radial Menu to showcase menu options
 
+____
+ 
+ScreenShot
+----------
+ 
+![Screenshot](https://github.com/melvinjlobo/SpiderMenu/blob/master/spidermenu.gif)
+
 Usage
 -----
  
