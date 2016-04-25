@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.abysmel.spidermenu.MainActivity">
+
+    <com.abysmel.spidermenu.SpiderMenu
+        android:id="@+id/spidermenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:centerMenuRadiusSize="100dp"
+        app:radialMenuRadiusSize="70dp"
+        >
+
+        <com.abysmel.spidermenu.RoundedShadowImageView
+            android:id="@+id/menuitem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menuType="radial"
+            app:shadowRadius="3dp"
+            app:shadowColor="@color/shadowColorRadial"
+            app:backgroundFillColor="#FF4571AA"
+            app:shadowElevation="7dp"
+            app:horizontalShadowOffsetRequired="false"
+            app:veticalShadowOffsetRequired="true"
+            android:src="@drawable/car"/>
+
+        <com.abysmel.spidermenu.RoundedShadowImageView
+            android:id="@+id/menuitem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menuType="radial"
+            app:shadowRadius="3dp"
+            app:shadowColor="@color/shadowColorRadial"
+            app:backgroundFillColor="#FF4571AA"
+            app:shadowElevation="7dp"
+            app:horizontalShadowOffsetRequired="false"
+            app:veticalShadowOffsetRequired="true"
+            android:src="@drawable/cloud"/>
+
+        <com.abysmel.spidermenu.RoundedShadowImageView
+            android:id="@+id/menuitem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menuType="radial"
+            app:shadowRadius="3dp"
+            app:shadowColor="@color/shadowColorRadial"
+            app:backgroundFillColor="#FF4571AA"
+            app:shadowElevation="7dp"
+            app:horizontalShadowOffsetRequired="false"
+            app:veticalShadowOffsetRequired="true"
+            android:src="@drawable/mountain"/>
+
+        <com.abysmel.spidermenu.RoundedShadowImageView
+            android:id="@+id/menuitem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menuType="radial"
+            app:shadowRadius="3dp"
+            app:shadowColor="@color/shadowColorRadial"
+            app:backgroundFillColor="#FF4571AA"
+            app:shadowElevation="7dp"
+            app:horizontalShadowOffsetRequired="false"
+            app:veticalShadowOffsetRequired="true"
+            android:src="@drawable/sun"/>
+
+        <com.abysmel.spidermenu.RoundedShadowImageView
+            android:id="@+id/menuitem5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menuType="radial"
+            app:shadowRadius="3dp"
+            app:shadowColor="@color/shadowColorRadial"
+            app:backgroundFillColor="#FF4571AA"
+            app:shadowElevation="7dp"
+            app:horizontalShadowOffsetRequired="false"
+            app:veticalShadowOffsetRequired="true"
+            android:src="@drawable/trees"/>
+
+        <!-- As a thumb rule, define the center menu after the others have been defined to maintain drawing order.
+             This will help the start animation where the radial pieces will be visibly coming from "below" the
+             central menu item-->
+        <com.abysmel.spidermenu.RoundedShadowImageView
+            android:id="@+id/menuitem6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:menuType="center"
+            app:shadowRadius="4dp"
+            app:shadowColor="@color/shadowColorRadial"
+            app:backgroundFillColor="#FF8871AA"
+            app:shadowElevation="4dp"
+            app:shouldResizeBitmap="false"
+            app:horizontalShadowOffsetRequired="false"
+            app:veticalShadowOffsetRequired="true"
+            android:src="@drawable/camera"/>
+
+    </com.abysmel.spidermenu.SpiderMenu>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+</RelativeLayout>

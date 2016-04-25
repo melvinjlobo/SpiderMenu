@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="shadow_size">3.0dip</dimen>
+    <color name="shadow_color">#ff9f9f9f</color>
+
+    <!-- Styleables for the Spider Menu Layout params to figure out the position of the item.
+        Note: that there can be only one item at the center of the menu -->
+    <declare-styleable name="SpiderMenu">
+        <!-- Custom attributes to define -->
+        <attr name="menuType">
+            <enum name="center" value="0" />
+            <enum name="radial" value="1" />
+        </attr>
+
+        <attr name="radialMenuRadiusSize" format="dimension"/>
+        <attr name="centerMenuRadiusSize" format="dimension"/>
+    </declare-styleable>
+
+    <!-- Styleable for options in the Rounded Shadow image viwq -->
+    <declare-styleable name="RoundedShadowImageView">
+        <attr name="shadowRadius" format="dimension"/>
+        <attr name="shadowElevation" format="dimension"/>      <!--  Note: Max level of 10 -->
+        <attr name="shadowColor" format="color"/>
+        <attr name="backgroundFillColor" format="color"/>
+        <attr name="horizontalShadowOffsetRequired" format="boolean"/>  <!-- Notes if horizontal offset of the shadow is required -->
+        <attr name="veticalShadowOffsetRequired" format="boolean"/>     <!-- Notes if vertical offset of the shadow is required -->
+        <attr name="shouldResizeBitmap" format="boolean"/>     <!-- Resize the bitmap if true, false otherwise -->
+    </declare-styleable>
+
+</resources>
